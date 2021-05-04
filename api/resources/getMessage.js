@@ -10,6 +10,7 @@ $( document ).ready(function() {
   type : "GET",
   success: result => {
   //get object
+
     let obj = JSON.parse(JSON.stringify(result));
     let num_of_Obj = obj.count;
     let sortedList = [];
@@ -18,10 +19,13 @@ $( document ).ready(function() {
         let numGenrated = Math.floor(Math.random()*num_of_Obj);
         if(sortedList.indexOf(numGenrated) == -1){
             sortedList.push(numGenrated);
+
         }
         else
          i--;
+
     }
+
     console.log("in messages_to_get is " + sortedList);
 
     messages_to_get = sortedList;
@@ -59,10 +63,11 @@ function get_a_Message(messages_to_get, currentNum){
       let obj = JSON.parse(JSON.stringify(result));
       let num = obj.count;
       let numused = currentNum - 1;
-      console.log("new new num is ", numused);
-      document.getElementById("the_Message").innerHTML +=
-      "<p class='mb-1'>" + obj.messages[numused].message.anonymousName + "</p>" +
-      "<p class='mb-1'>" + obj.messages[numused].message.message + "</p>" ;
+      let randomMessage = messages_to_get[numused];
+
+      document.getElementById("the_Message").innerHTML =
+      "<p class='mb-1'>" + obj.messages[randomMessage].message.anonymousName + "</p>" +
+      "<p class='mb-1'>" + obj.messages[randomMessage].message.message + "</p>" ;
 
     },
     error : error => {
