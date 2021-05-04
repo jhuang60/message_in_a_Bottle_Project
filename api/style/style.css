@@ -1,6 +1,49 @@
-body {
- background-image: url("media/ocean.jpg");
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
+body{
+ margin: 0;
+ background-color: #dbf5ff;
+}
+
+main {
+   margin: 5%;
+}
+.container {
+  padding: 3%;
+  background-color: white;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  border-bottom: 2px solid;
+  border-bottom-color: #dbdbdb;
+}
+
+.topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+
+.topnav h1 {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+  background-color: #c9e9f2;
+  color: black;
+}
+
+#getMessageContent{
+  text-align: center;
+}
+
+#the_Message {
+  padding-bottom: 3%;
 }
