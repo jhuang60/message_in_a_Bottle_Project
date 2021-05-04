@@ -22,7 +22,9 @@ function sendMessage(){
                 },
         success: result => {
             console.log("success ", result);
-            alert ("success");
+            document.getElementById('anonymousNameInput').value = '';
+            document.getElementById('messageInput').value = '';
+            alert ("Your message is successfully sent");
         },
         error : error => {
             console.log("error", error);
