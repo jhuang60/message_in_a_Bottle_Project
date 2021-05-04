@@ -13,12 +13,19 @@
     <title>Message Bottle</title>
   </head>
   <body>
-    <h1>Message Bottle App</h1>
-    <div class="container">
-      <a href="/message">send a message</a>
-      <button class="btn btn-primary" id="get_a_Message">Get a message</button>
-      <div id="the_Message"></div>
-    </div>
+    <header class="topnav">
+      <h1 id="h1-header">Message Bottle App</h1>
+      <a href="/message">Send a Message</a>
+      <a href="/">Receive a Message</a>
+    </header>
+    <main id="getMessageContent">
+      <div class="container">
+        <div id="the_Message">
+          <p>click the button to get a message<p>
+        </div>
+        <button class="btn btn-primary" id="get_a_Message">Get a message</button>
+      </div>
+    </main>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
