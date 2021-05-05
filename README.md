@@ -18,7 +18,8 @@ Message in a bottle is a web application that allows user to anonymously post a 
 
 ### To run project
 
-In your terminal, run <i>**npm start**</i>
+1. In your terminal, run <i>**npm start**</i>
+2. Open the browser and enter http://localhost:3000/
 
 ### To run test
 
