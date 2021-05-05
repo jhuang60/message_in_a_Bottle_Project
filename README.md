@@ -95,6 +95,7 @@ Test the post page for components. This makes sure that all front end components
 <img width="915" alt="Screen Shot 2021-05-05 at 1 31 17 PM" src="https://user-images.githubusercontent.com/25678885/117204357-d3db9100-adb5-11eb-91c9-3c97c06c9cb6.png">
 
 Test the index page for get requests. This makes sure the get request returns an object and the page returns 200 OK success status response.
+
 <img width="685" alt="Screen Shot 2021-05-05 at 1 31 23 PM" src="https://user-images.githubusercontent.com/25678885/117204378-d9d17200-adb5-11eb-90fd-c18d36deef79.png">
 
 Test the post page for post requests. This inserts two inputs and makes sure that it returns a 201 status response, an _id, and makes sure that it is an object. The test was not passed successfully (Check error section for more details).
