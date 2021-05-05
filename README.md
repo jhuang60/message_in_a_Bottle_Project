@@ -2,7 +2,7 @@
 
 ## Project summary
 
-Message in a bottle is a web application that allows user to anonymously post a message and also messages from other anonymous users. This application takes an anonymous name and a message as user input. When a user clicks get a message, a random message will be returned. The messages are retrieved from mongodb and sorted randomly into an array and then displayed according to the order of the randomized array. Users will receive an alert if there are no messages in the database and also an alert if the user has read all messages available in the database.
+Message in a bottle is a web application that allows user to anonymously post a message and also messages from other anonymous users. This application takes an anonymous name and a message as user input. When a user clicks get a message, a non-repeated random message will be returned. The messages are retrieved from mongodb and sorted randomly into an array and then displayed according to the order of the randomized array. Users will receive an alert if there are no messages in the database and also an alert if the user has read all messages available in the database.
 
 ## How to set up and run project
 
@@ -16,11 +16,11 @@ Message in a bottle is a web application that allows user to anonymously post a 
 
 ### To run project
 
-In your terminal, run <i>npm start</i>
+In your terminal, run <i>**npm start**</i>
 
 ### To run test
 
-In your terminal, run <i>npm test</i>
+In your terminal, run <i>**npm test**</i>
 
 ## Design and architecture
 
@@ -41,16 +41,21 @@ Users only have two decisions to make when using this web application. If the us
 #### Main page
 
 ![pic1](https://user-images.githubusercontent.com/25678885/117103475-0d71b500-ad40-11eb-81c4-802c39fad6a4.jpg)
+Main page: User is able to click get a message or use the menu to navigate to post message page.
 
 ![pic2](https://user-images.githubusercontent.com/25678885/117103485-12366900-ad40-11eb-8f87-c62f0b3b6f1f.png)
+Get message: After user clicks the button, a randomized message is displayed.
 
 #### Post message page
 
 ![pic3](https://user-images.githubusercontent.com/25678885/117103506-1793b380-ad40-11eb-81af-bb9586a15a0e.png)
+Post message page: User is able to input an anonymous name and a message
 
 ![pic4](https://user-images.githubusercontent.com/25678885/117103514-1bbfd100-ad40-11eb-805d-735e91c8c3a1.png)
+Alert user: After the user successfully submits the message, it will display an alert.
 
 ## Test 
+
 
 ## Expected Results
 
