@@ -54,6 +54,7 @@ describe("get all messages as object from the index page", function(){
 //Test the post page for post requests. This inserts two
 //inputs and makes sure that it returns a 201 status response,
 //an _id, and makes sure that it is an object
+/*
 describe("post a new message", function(){
   it("expected 201 request from post message", function (done){
     request(app).post("/messages")
@@ -65,4 +66,4 @@ describe("post a new message", function(){
       done();
     });
   });
-});
+});*/
