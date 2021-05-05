@@ -32,7 +32,7 @@ In your terminal, run <i>**npm start**</i>
 
 This application is developed in RESTful API structure. In the serve side, a get request to get all messages from the database and a post request is developed post new messages to the database. The server side is mainly developed using node.js and express. The Client side of the application mainly uses jquery and ajax to handle user input. For database, MongoDB Atlas database service is used to store user input.
 
-![Untitled_Artwork 2](https://user-images.githubusercontent.com/25678885/117103363-dc918000-ad3f-11eb-9b26-66ee77a93cc0.jpg)
+![architecture](https://user-images.githubusercontent.com/25678885/117210249-0937ad00-adbd-11eb-8655-e96cc1429489.jpg)
 
 ### User flow diagram
 
