@@ -1,20 +1,18 @@
 $( document ).ready(function() {
 
-  //let num_of_messages = [];
-  //num_of_messages = generateArray(num_of_messages);
   let messages_to_get = [];
   let currentNum = 0;
 
-  console.log("hi ");
+  // get all messages from mongodb and sort them in a random order
   $.ajax("http://localhost:3000/messages", {
   type : "GET",
   success: result => {
-  //get object
 
     let obj = JSON.parse(JSON.stringify(result));
     let num_of_Obj = obj.count;
     let sortedList = [];
 
+    //for loop to sort messages
     for(let i = 0;i<num_of_Obj ; i++){
         let numGenrated = Math.floor(Math.random()*num_of_Obj);
         if(sortedList.indexOf(numGenrated) == -1){
@@ -25,9 +23,7 @@ $( document ).ready(function() {
          i--;
 
     }
-
-    console.log("in messages_to_get is " + sortedList);
-
+    //save the sorted array to messages_to_get
     messages_to_get = sortedList;
   },
   error : error => {
@@ -38,19 +34,19 @@ $( document ).ready(function() {
   //onclick to get a message
   $("#get_a_Message").on("click",function(e){
       e.preventDefault();
+      //check if currentNum is less than messages_to_get. If it is false
+      //it means that there are no messages for you to read (either you read all messages
+      // or there are no messages)
       if(currentNum < messages_to_get.length){
         currentNum = get_a_Message(messages_to_get, currentNum);
-        console.log("new num is " + currentNum);
-        console.log("out messages_to_get is " + messages_to_get);
       } else {
-        alert("you've opened all bottles possible");
+        alert("There are no message bottles to open");
       }
-
   });
 
 });
 
-//function to randoly get a message
+//function to display a message
 function get_a_Message(messages_to_get, currentNum){
     //ajax get request for all messages
     console.log("hi there");
@@ -58,16 +54,16 @@ function get_a_Message(messages_to_get, currentNum){
     type : "GET",
     asyn: false,
     success: result => {
-    //get object
+    //get message objects
 
       let obj = JSON.parse(JSON.stringify(result));
-      let num = obj.count;
       let numused = currentNum - 1;
       let randomMessage = messages_to_get[numused];
 
+      //display messages according to the array messages_to_get
       document.getElementById("the_Message").innerHTML =
-      "<p class='mb-1'>" + obj.messages[randomMessage].message.anonymousName + "</p>" +
-      "<p class='mb-1'>" + obj.messages[randomMessage].message.message + "</p>" ;
+      "<p class='mb-1'>" + "From: "+ obj.messages[randomMessage].message.anonymousName + "</p>" +
+      "<p class='mb-1'>" + "Message: " + obj.messages[randomMessage].message.message + "</p>" ;
 
     },
     error : error => {

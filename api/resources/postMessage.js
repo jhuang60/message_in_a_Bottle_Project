@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-    //onclick to get a message
+    //onclick to post a message
     $("#submitMessageBtn").on("click",function(e){
         e.preventDefault();
         sendMessage();
@@ -22,12 +22,14 @@ function sendMessage(){
                 },
         success: result => {
             console.log("success ", result);
+            //clear input boxes
             document.getElementById('anonymousNameInput').value = '';
             document.getElementById('messageInput').value = '';
             alert ("Your message is successfully sent");
         },
         error : error => {
-            console.log("error", error);
+          alert ("Your message failed to send");
+          console.log("error", error);
         }
     });
 

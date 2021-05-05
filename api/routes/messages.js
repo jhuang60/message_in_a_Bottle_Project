@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 
 
 const Message = require('../models/message_model');
+
 //get request for all messages
 router.get('/', (req, res, next) => {
     Message.find()
