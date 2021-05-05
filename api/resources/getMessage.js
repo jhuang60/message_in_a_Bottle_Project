@@ -4,7 +4,7 @@ $( document ).ready(function() {
   let currentNum = 0;
 
   // get all messages from mongodb and sort them in a random order
-  $.ajax("http://localhost:3000/messages", {
+  $.ajax("https://bottle-message-app.herokuapp.com/messages", {
   type : "GET",
   success: result => {
 
@@ -50,7 +50,7 @@ $( document ).ready(function() {
 function get_a_Message(messages_to_get, currentNum){
     //ajax get request for all messages
     console.log("hi there");
-    $.ajax("http://localhost:3000/messages", {
+    $.ajax("https://bottle-message-app.herokuapp.com/messages", {
     type : "GET",
     asyn: false,
     success: result => {

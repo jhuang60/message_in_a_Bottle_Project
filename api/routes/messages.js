@@ -18,7 +18,7 @@ router.get('/', (req, res, next) => {
                         message: doc,
                         request: {
                             type: "GET",
-                            url: "http://localhost:3000/messages/" + doc._id
+                            url: "https://bottle-message-app.herokuapp.com/message/" + doc._id
                         }
                     }
                 })
@@ -53,7 +53,7 @@ router.post('/', (req, res, next) => {
                 },
                 request: {
                     type: "GET",
-                    url: "http://localhost:3000/messages/" + result._id
+                    url: "https://bottle-message-app.herokuapp.com/message/" + result._id
                 }
             });
         })

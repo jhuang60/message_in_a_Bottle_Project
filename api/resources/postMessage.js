@@ -15,7 +15,7 @@ function sendMessage(){
     let message = $('#messageInput').val();
 
     //ajax post request for to send a message
-    $.ajax("http://localhost:3000/messages", {
+    $.ajax("https://bottle-message-app.herokuapp.com/messages", {
         type : "POST",
         data : {    anonymousName: anonymousName,
                     message: message,
