@@ -24,6 +24,7 @@ $( document ).ready(function() {
 
     }
     //save the sorted array to messages_to_get
+    console.log("sortedList is " + sortedList);
     messages_to_get = sortedList;
   },
   error : error => {
@@ -58,7 +59,7 @@ function get_a_Message(messages_to_get, currentNum){
       let obj = JSON.parse(JSON.stringify(result));
       let numused = currentNum - 1;
       let randomMessage = messages_to_get[numused];
-
+      console.log("randomMessage is " + randomMessage);
       //display messages according to the array messages_to_get
       document.getElementById("the_Message").innerHTML =
       "<p class='mb-1'>" + "From: "+ obj.messages[randomMessage].message.anonymousName + "</p>" +
