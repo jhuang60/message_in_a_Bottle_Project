@@ -49,7 +49,6 @@ $( document ).ready(function() {
 //function to display a message
 function get_a_Message(messages_to_get, currentNum){
     //ajax get request for all messages
-    console.log("hi there");
     $.ajax("https://bottle-message-app.herokuapp.com/messages", {
     type : "GET",
     asyn: false,

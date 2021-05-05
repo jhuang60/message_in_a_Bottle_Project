@@ -54,8 +54,15 @@ Post message page: User is able to input an anonymous name and a message
 ![pic4](https://user-images.githubusercontent.com/25678885/117103514-1bbfd100-ad40-11eb-805d-735e91c8c3a1.png)
 Alert user: After the user successfully submits the message, it will display an alert.
 
-## Test 
+## Test
 
+Test the index page for components. This makes sure that all front end components are in place and not mistakenly modified and the page returns 200 OK success status response.
+
+Test the post page for components. This makes sure that all front end components are in place and not mistakenly modified and the page returns 200 OK success status response.
+
+Test the index page for get requests. This makes sure the get request returns an object and the page returns 200 OK success status response.
+
+Test the post page for post requests. This inserts two inputs and makes sure that it returns a 201 status response, an _id, and makes sure that it is an object
 
 ## Expected Results
 
