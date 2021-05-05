@@ -1,5 +1,7 @@
 # Message in a Bottle Project
 
+### Deployed heroku url: https://bottle-message-app.herokuapp.com/
+
 ## Project summary
 
 Message in a bottle is a web application that allows user to anonymously post a message and also messages from other anonymous users. This application takes an anonymous name and a message as user input. When a user clicks get a message, a non-repeated random message will be returned. The messages are retrieved from mongodb and sorted randomly into an array and then displayed according to the order of the randomized array. Users will receive an alert if there are no messages in the database and also an alert if the user has read all messages available in the database.
