@@ -44,19 +44,19 @@ Users only have two decisions to make when using this web application. If the us
 
 #### Main page
 
-![pic1](https://user-images.githubusercontent.com/25678885/117103475-0d71b500-ad40-11eb-81c4-802c39fad6a4.jpg)
 Main page: User is able to click get a message or use the menu to navigate to post message page.
+![pic1](https://user-images.githubusercontent.com/25678885/117103475-0d71b500-ad40-11eb-81c4-802c39fad6a4.jpg)
 
-![pic2](https://user-images.githubusercontent.com/25678885/117103485-12366900-ad40-11eb-8f87-c62f0b3b6f1f.png)
 Get message: After user clicks the button, a randomized message is displayed.
+![pic2](https://user-images.githubusercontent.com/25678885/117103485-12366900-ad40-11eb-8f87-c62f0b3b6f1f.png)
 
 #### Post message page
 
-![pic3](https://user-images.githubusercontent.com/25678885/117103506-1793b380-ad40-11eb-81af-bb9586a15a0e.png)
 Post message page: User is able to input an anonymous name and a message
+![pic3](https://user-images.githubusercontent.com/25678885/117103506-1793b380-ad40-11eb-81af-bb9586a15a0e.png)
 
-![pic4](https://user-images.githubusercontent.com/25678885/117103514-1bbfd100-ad40-11eb-805d-735e91c8c3a1.png)
 Alert user: After the user successfully submits the message, it will display an alert.
+![pic4](https://user-images.githubusercontent.com/25678885/117103514-1bbfd100-ad40-11eb-805d-735e91c8c3a1.png)
 
 ## Expected Results
 
@@ -66,7 +66,7 @@ Display main page:
 Display result based on a sorted list of messages from the database:
 <img width="1280" alt="Screen Shot 2021-05-05 at 3 30 24 PM" src="https://user-images.githubusercontent.com/25678885/117205280-0afe7200-adb7-11eb-87f7-ff29e2c354e1.png">
 
-Console output for the sorted list: In this case, message 5 and 0 was displayed
+Console output for the sorted list: In this case, message 5 and 0 was displayed.  
 <img width="493" alt="Screen Shot 2021-05-05 at 3 30 10 PM" src="https://user-images.githubusercontent.com/25678885/117205339-1e114200-adb7-11eb-874c-fc278bad6fd7.png">
 
 Location of message 5 and 0 on the database:
@@ -74,6 +74,15 @@ Location of message 5 and 0 on the database:
 <img width="707" alt="Screen Shot 2021-05-05 at 3 31 22 PM" src="https://user-images.githubusercontent.com/25678885/117205678-8e1fc800-adb7-11eb-870b-783b69796da7.png">
 
 <img width="716" alt="Screen Shot 2021-05-05 at 3 31 30 PM" src="https://user-images.githubusercontent.com/25678885/117205690-924be580-adb7-11eb-8a24-843097787f25.png">
+
+Alert the user if the user saw every message or if the database is empty:
+<img width="1280" alt="Screen Shot 2021-05-05 at 4 23 23 PM" src="https://user-images.githubusercontent.com/25678885/117211154-43ee1500-adbe-11eb-82af-569a777ea895.png">
+
+Post message page:
+<img width="1254" alt="Screen Shot 2021-05-05 at 3 15 58 PM" src="https://user-images.githubusercontent.com/25678885/117210758-bb6f7480-adbd-11eb-9fe7-28e67cccdac5.png">
+
+Alert the user if the message was successfully posted or it didn't:
+<img width="1255" alt="Screen Shot 2021-05-05 at 3 16 07 PM" src="https://user-images.githubusercontent.com/25678885/117210788-c4604600-adbd-11eb-8937-7117a37f4310.png">
 
 ## Test
 
