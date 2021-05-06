@@ -2,6 +2,7 @@ version: 2.1
 
 orbs:
   heroku: circleci/heroku@1.2.6
+  node: circleci/node@3.0.0
 
 jobs:
   run_tests:
@@ -14,7 +15,8 @@ jobs:
             npm install --save
       - run:
         name: run tests
-        commad: ./node_modules/.bin/mocha
+        commad: |
+          ./node_modules/.bin/mocha
 workflows:
   build-tests:
     jobs:
