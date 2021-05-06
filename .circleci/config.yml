@@ -2,8 +2,20 @@ version: 2.1
 
 orbs:
   heroku: circleci/heroku@1.2.6
+  node: circleci/node@3.0.0
+
+jobs:
+  install_and_test:
+    machine: true
+    steps:
+      - run: npm install --save
+      - run: npm test
+
+
 
 workflows:
-  heroku_deploy:
+  version: 2.1
+  test-and-deploy:
     jobs:
-      - heroku/deploy-via-git
+      - install_and_test
+     
