@@ -5,18 +5,20 @@ orbs:
   node: circleci/node@3.0.0
 
 jobs:
-  run_tests:
-     steps:
-       - checkout
-       - run:
-         name: Install npm dependencies
-         command: |
-            npm install --save
-      - run:
-        name: run tests
-        commad: |
-          ./node_modules/.bin/mocha
+  test:
+    machine: true
+    steps:
+      - run: npm install --save
+  deploy:
+    machine: true
+    steps:
+      - run: ./node_modules/.bin/mocha
+
 workflows:
-  build-tests:
+  version: 2.1
+  test-and-deploy:
     jobs:
-      - run_tests
+      - test
+      - deploy:
+          requires:
+            - test
