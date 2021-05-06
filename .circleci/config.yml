@@ -2,24 +2,8 @@ version: 2.1
 
 orbs:
   heroku: circleci/heroku@1.2.6
-  node: circleci/node@3.0.0
-
-jobs:
-
-  working_directory: ~/message_in_a_Bottle_Project
-  test:
-    machine: true
-    steps:
-      - run: npm test
-  deploy:
-    machine: true
-    steps:
-      - run: npm start
 
 workflows:
-  test-and-deploy:
+  heroku_deploy:
     jobs:
-      - test
-      - deploy:
-          requires:
-            - test
+      - heroku/deploy-via-git
