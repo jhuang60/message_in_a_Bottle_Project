@@ -6,7 +6,6 @@ orbs:
 
 jobs:
   run_tests:
-     - image: circleci/node@3.0.0
      steps:
        - checkout
        - run:
