@@ -5,6 +5,8 @@ orbs:
   node: circleci/node@3.0.0
 
 jobs:
+
+  working_directory: ~/message_in_a_Bottle_Project
   test:
     machine: true
     steps:
