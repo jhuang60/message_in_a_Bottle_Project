@@ -8,14 +8,13 @@ jobs:
   test:
     machine: true
     steps:
-      - run: npm install --save
+      - run: npm test
   deploy:
     machine: true
     steps:
-      - run: npm test
+      - run: npm start
 
 workflows:
-  version: 2.1
   test-and-deploy:
     jobs:
       - test
