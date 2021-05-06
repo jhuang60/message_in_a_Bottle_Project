@@ -12,7 +12,7 @@ jobs:
   deploy:
     machine: true
     steps:
-      - run: ./node_modules/.bin/mocha
+      - run: npm test
 
 workflows:
   version: 2.1
