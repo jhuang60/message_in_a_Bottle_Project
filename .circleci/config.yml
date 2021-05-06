@@ -10,8 +10,7 @@ jobs:
     steps:
       - run: npm install --save
       - run: npm test
-
-
+      - run: npm start
 
 workflows:
   version: 2.1
